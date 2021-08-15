@@ -1,9 +1,9 @@
-name: Publish to Nexus
+name: Publish to Nexus Snapshot
 
 on:
   push:
     branches:
-      - snapshots
+      - snapshot
 env:
   groupId: com.yuanmai.protobuf
   artifactId: yuanmai-protobuf-java
@@ -11,7 +11,7 @@ env:
   nexus-repository: maven-snapshots
 
 jobs:
-  build-push-snapshots:
+  build-push-snapshot:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository
