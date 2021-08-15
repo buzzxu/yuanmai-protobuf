@@ -9,9 +9,10 @@ env:
   groupId: com.yuanmai.protobuf
   artifactId: yuanmai-protobuf-java
   version: 21.1.1-SNAPSHOT
+  nexus-repository: maven-snapshots
 
 jobs:
-  build-push:
+  build-push-snapshots:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository
@@ -31,7 +32,7 @@ jobs:
           username: admin
           password: ${{ secrets.password }}
           format: maven2
-          repository: maven-public
+          repository: ${{ env.nexus-repository }}
           coordinates: groupId=${{ env.groupId }} artifactId=${{ env.artifactId }} version=${{ env.version }}
           assets: extension=jar
           filename: ./target/yuanmai-protobuf-java-${{ env.version }}.jar
