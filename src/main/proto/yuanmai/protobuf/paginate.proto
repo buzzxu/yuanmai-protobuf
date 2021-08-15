@@ -7,8 +7,8 @@ option go_package = "github.com/buzzxu/protobuf";
 
 
 message PageResult{
-    int32 TotalRows = 1; // 总记录
-    int32 TotalPages = 2; // 总页数
-    int32 PageSize = 3; // 每页显示
-    int32 PageNumber = 4; // 当前页码
+    int32 totalRow = 1; // 总记录
+    int32 totalPage = 2; // 总页数
+    int32 pageSize = 3; // 每页显示
+    int32 pageNumber = 4; // 当前页码
 }
