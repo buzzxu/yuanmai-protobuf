@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package yuanmai.protobuf;
+
+import "google/protobuf/any.proto";
+import "google/type/date.proto";
+import "google/type/datetime.proto";
+
+option java_package = "com.yuanmai.protobuf";
+option java_multiple_files = true;
+option go_package = "github.com/buzzxu/yuanmai-protobuf-go";
+
+message UserInfo {
+    int64 id = 1;
+    google.type.DateTime createdAt = 2;
+    google.type.DateTime updatedAt = 3;
+    int32 orgId = 4;
+    string realName = 5;
+    string avatar = 6;
+    string userName = 7;
+    string nikeName = 8;
+    string mobile = 9;
+    string email = 10;
+    string password = 11;
+    string salt = 12;
+    int32  status = 13;
+    bool firstLogin = 14;
+    bool merge = 15;
+    bool use2FA = 16;
+    string secret2FA = 17;
+    int32 type = 18;
+    int32 gender = 19;
+    int32 source = 20;
+    OAuthUser oAuthUser = 21;
+    repeated OAuthUser oAuthUsers = 22;
+    int32 roleId = 23;
+    string roleName = 24;
+    string roleCode = 25;
+    repeated int32 roleIds = 26;
+    repeated string roleCodes = 27;
+}
+
+message OAuthUser {
+    int64 id = 1;
+    int64 userId = 2;
+    int32 type = 3;
+    string oAuthId = 4;
+    string unionid = 5;
+    string credential = 6;
+    google.type.DateTime createdAt = 7;
+}
