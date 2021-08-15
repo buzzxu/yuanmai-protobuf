@@ -6,7 +6,7 @@
 
     <groupId>com.yuanmai.protobuf</groupId>
     <artifactId>yuanmai-protobuf-java</artifactId>
-    <version>21.1.1-SNAPSHOT</version>
+    <version>${rversion}</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
