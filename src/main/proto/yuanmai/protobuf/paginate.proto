@@ -3,10 +3,10 @@ package yuanmai.protobuf;
 
 option java_package = "com.yuanmai.protobuf";
 option java_multiple_files = true;
-option go_package = "github.com/buzzxu/protobuf";
+option go_package = "github.com/buzzxu/yuanmai-protobuf-go";
 
 
-message PageResult{
+message Page{
     int32 totalRow = 1; // 总记录
     int32 totalPage = 2; // 总页数
     int32 pageSize = 3; // 每页显示
