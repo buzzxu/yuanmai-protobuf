@@ -2,13 +2,16 @@ syntax = "proto3";
 
 package yuanmai.protobuf;
 
-import "google/protobuf/any.proto";
-import "google/type/date.proto";
+import "google/protobuf/wrappers.proto";
 import "google/type/datetime.proto";
 
 option java_package = "com.yuanmai.protobuf";
 option java_multiple_files = true;
 option go_package = "github.com/buzzxu/yuanmai-protobuf-go";
+
+service UserApi {
+    rpc of(google.protobuf.Int64Value) returns (UserInfo);
+}
 
 message UserInfo {
     int64 id = 1;
