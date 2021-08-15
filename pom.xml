@@ -25,6 +25,16 @@
         </dependencies>
     </dependencyManagement>
 
+    <distributionManagement>
+        <repository>
+            <id>ym-nexus</id>
+            <url>https://nexus.xingchenga.xyz/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ym-nexus</id>
+            <url>https://nexus.xingchenga.xyz/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>io.grpc</groupId>
