@@ -23,4 +23,4 @@ jobs:
           distribution: 'zulu'
           java-version: '8'
       - name: Build with Maven
-        run: mvn package -Drversion=${{ env.version }} -Dpassword=${{ secrets.password }} --file pom.xml -s settings.xml
+        run: mvn deploy -Drversion=${{ env.version }} -Dpassword=${{ secrets.password }} --file pom.xml -s settings.xml
