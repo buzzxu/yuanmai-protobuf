@@ -28,3 +28,15 @@ message ListOfInt {
 message ListOfAny {
     repeated google.protobuf.Any values = 1;
 }
+
+//区域
+message Region {
+    string provinceId = 1;
+    string province = 2;
+    string cityId = 3;
+    string city = 4;
+    string county = 5;
+    string countyId = 6;
+    string town = 7;
+    string townId = 8;
+}
