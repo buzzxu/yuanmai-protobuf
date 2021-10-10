@@ -7,8 +7,6 @@ on:
 env:
   groupId: com.yuanmai.protobuf
   artifactId: yuanmai-protobuf-java
-  version: 21.1.1-SNAPSHOT
-  nexus-repository: maven-snapshots
 
 jobs:
   build-push-snapshot:
