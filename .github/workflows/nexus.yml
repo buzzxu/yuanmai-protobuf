@@ -9,7 +9,7 @@ env:
   artifactId: yuanmai-protobuf-java
 
 jobs:
-  build-push-snapshot:
+  build-push:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository
