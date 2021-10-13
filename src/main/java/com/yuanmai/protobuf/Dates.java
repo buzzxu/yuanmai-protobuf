@@ -11,9 +11,10 @@ import java.time.LocalDateTime;
 public class Dates {
 
     public static LocalDateTime to(DateTime dateTime){
-        if(dateTime == null ){
+        if(dateTime == null || dateTime == DateTime.getDefaultInstance() ){
             return null;
         }
+
         return LocalDateTime.of(dateTime.getYear(),dateTime.getMonth(),dateTime.getDay(), dateTime.getHours(), dateTime.getMinutes(),dateTime.getSeconds());
     }
     public static DateTime to(LocalDateTime dateTime){
