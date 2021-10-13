@@ -11,14 +11,14 @@ import java.time.LocalDateTime;
 public class Dates {
 
     public static LocalDateTime to(DateTime dateTime){
-        if(dateTime == null){
+        if(dateTime == null ){
             return null;
         }
         return LocalDateTime.of(dateTime.getYear(),dateTime.getMonth(),dateTime.getDay(), dateTime.getHours(), dateTime.getMinutes(),dateTime.getSeconds());
     }
     public static DateTime to(LocalDateTime dateTime){
         if(dateTime == null){
-            return null;
+            return DateTime.getDefaultInstance();
         }
         return DateTime.newBuilder()
                 .setYear(dateTime.getYear())
