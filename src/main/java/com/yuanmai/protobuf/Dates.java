@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 public class Dates {
 
     public static LocalDateTime to(DateTime dateTime){
-        if(dateTime == null || dateTime == DateTime.getDefaultInstance() ){
+        if(dateTime == null || dateTime == DateTime.getDefaultInstance() || (dateTime.getYear() == 0 || dateTime.getMonth() == 0 || dateTime.getDay() == 0)){
             return null;
         }
 
