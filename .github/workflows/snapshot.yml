@@ -2,7 +2,7 @@ name: Publish snapshot to Nexus
 
 on:
   push:
-    branches: [ 22.x ]
+    branches: [ snapshot ]
 env:
   groupId: com.yuanmai.protobuf
   artifactId: yuanmai-protobuf-java
