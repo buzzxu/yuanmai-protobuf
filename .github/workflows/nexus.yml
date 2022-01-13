@@ -1,9 +1,8 @@
 name: Publish to Nexus
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [ published ]
 env:
   groupId: com.yuanmai.protobuf
   artifactId: yuanmai-protobuf-java
@@ -14,6 +13,8 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
+        with:
+          ref: 'master'
 
       - name: Install Java and Maven
         uses: actions/setup-java@v2
