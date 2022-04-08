@@ -6,12 +6,12 @@
 
     <groupId>com.yuanmai.protobuf</groupId>
     <artifactId>yuanmai-protobuf-java</artifactId>
-    <version>21.1.1</version>
+    <version>21.1.2</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <grpc.version>1.42.2</grpc.version>
+        <grpc.version>1.45.1</grpc.version>
         <protobuf.version>3.19.2</protobuf.version>
     </properties>
 
