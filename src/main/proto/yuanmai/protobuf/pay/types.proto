@@ -41,6 +41,8 @@ enum PaymentMethod{
     SETTLEMENT = 3;
     // 部分结算
     SETTLEMENT_PART = 4;
+    // 后付款
+    POST_PAY = 5;
 }
 // 退款状态
 enum RefundState {
