@@ -17,17 +17,17 @@ enum BankAccType {
 //支付供应商
 enum PaySupplier{
     //未知
-    NONE = 0;
+    NONE_ = 0;
     //微信
-    WEIXIN = 1;
+    WEIXIN_ = 1;
     //支付宝
-    ALIPAY = 2;
+    ALIPAY__ = 2;
     //通联支付
-    ALLINPAY = 3;
+    ALLINPAY_ = 3;
     //银联支付
-    UNION = 4;
+    UNION_ = 4;
     //易生支付
-    EASYPAY =5;
+    EASYPAY_ =5;
 
 }
 // 支付状态
@@ -135,9 +135,9 @@ enum TradeType{
     NATIVE = 3;
     MWEB =4;
     MA = 5;
-    ALIPAY = 6;
+    ALIPAY_ = 6;
     MICROPAY = 7;
-    GATEWAY= 8;
+    GATEWAY_ = 8;
 }
 //付款类型
 enum PayType{
