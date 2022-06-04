@@ -15,7 +15,7 @@ enum BankAccType {
     TO_PUBLIC = 1;
 }
 //支付供应商
-enum PaySupplier{
+enum PayVendor{
     //未知
     NONE_ = 0;
     //微信
