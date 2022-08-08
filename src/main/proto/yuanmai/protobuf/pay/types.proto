@@ -13,6 +13,7 @@ enum BankAccType {
     TO_PRIVATE = 0;
     //对公账户
     TO_PUBLIC = 1;
+
 }
 //支付供应商
 enum PayVendor{
