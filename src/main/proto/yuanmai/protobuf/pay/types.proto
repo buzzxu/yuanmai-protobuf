@@ -112,6 +112,8 @@ enum PayChannel{
     BALANCE = 3;
     // 网关支付
     GATEWAY = 4;
+    //线下支付
+    OFFLINE = 5;
 }
 // 支付交易类型
 enum PayTradeType{
