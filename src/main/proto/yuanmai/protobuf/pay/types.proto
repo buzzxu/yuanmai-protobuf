@@ -141,6 +141,8 @@ enum TradeType{
     ALIPAY_ = 6;
     MICROPAY = 7;
     GATEWAY_ = 8;
+    //线下
+    OFFLINE_TRADE = 9;
 }
 //付款类型
 enum PayType{
