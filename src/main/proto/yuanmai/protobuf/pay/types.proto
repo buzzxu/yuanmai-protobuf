@@ -150,3 +150,10 @@ enum PayType{
     B2C = 1;
     B2B = 2;
 }
+// 付款人类型
+enum PayerType{
+    // 个人
+    PERSONAL = 0;
+    // 企业
+    COMPANY = 1;
+}
