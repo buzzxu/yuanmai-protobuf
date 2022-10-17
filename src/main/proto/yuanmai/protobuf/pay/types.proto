@@ -13,8 +13,24 @@ enum BankAccType {
     TO_PRIVATE = 0;
     //对公账户
     TO_PUBLIC = 1;
-}
 
+}
+//支付供应商
+enum PayVendor{
+    //未知
+    NONE_ = 0;
+    //微信
+    WEIXIN_ = 1;
+    //支付宝
+    ALIPAY__ = 2;
+    //通联支付
+    ALLINPAY_ = 3;
+    //银联支付
+    UNION_ = 4;
+    //易生支付
+    EASYPAY_ =5;
+
+}
 // 支付状态
 enum PayState{
     // 未支付
@@ -30,6 +46,7 @@ enum PayState{
     // 关闭
     CLOSE = 5;
 }
+//支付方式
 enum PaymentMethod{
     // 现付
     CASH = 0;
@@ -41,6 +58,33 @@ enum PaymentMethod{
     SETTLEMENT = 3;
     // 部分结算
     SETTLEMENT_PART = 4;
+    // 后付款
+    POST_PAY = 5;
+}
+//结算方式
+enum SettlementMethod{
+    //无结算
+    NONE = 0;
+    //货到结算
+    SEL_DELIVERY = 1;
+    //日结
+    DAY = 2;
+    //周结
+    WEEK = 3;
+    //月结
+    MONTH = 4;
+    //当月结
+    CURR_MONTH = 5;
+    //60天结
+    DAYS_60 = 6;
+    //90天结
+    DAYS_90 = 7;
+    //季结
+    SEASON = 8;
+    //3日结
+    DAYS_3 = 9;
+    //混合结算
+    MIX = 99;
 }
 // 退款状态
 enum RefundState {
@@ -68,4 +112,48 @@ enum PayChannel{
     BALANCE = 3;
     // 网关支付
     GATEWAY = 4;
+    //线下支付
+    OFFLINE = 5;
+}
+// 支付交易类型
+enum PayTradeType{
+    //未知
+    CONSUME = 0;
+    //退款
+    REFUND = 1;
+    //充值
+    RECHARGE = 2;
+    //提现
+    WITHDRAW =3;
+    //转账
+    TRANSFER = 4;
+    //调账
+    ADJUSTING = 5;
+}
+//交易类型
+enum TradeType{
+    UNKNOWN = 0;
+    JSAPI = 1;
+    APP = 2;
+    NATIVE = 3;
+    MWEB =4;
+    MA = 5;
+    ALIPAY_ = 6;
+    MICROPAY = 7;
+    GATEWAY_ = 8;
+    //线下
+    OFFLINE_TRADE = 9;
+}
+//付款类型
+enum PayType{
+    ALL = 0;
+    B2C = 1;
+    B2B = 2;
+}
+// 付款人类型
+enum PayerType{
+    // 个人
+    PERSONAL = 0;
+    // 企业
+    COMPANY = 1;
 }
