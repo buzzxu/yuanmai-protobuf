@@ -114,6 +114,12 @@ enum PayChannel{
     GATEWAY = 4;
     //线下支付
     OFFLINE = 5;
+    //代金券
+    COUPON = 6;
+    //收银台
+    CASHIER = 7;
+    //云闪付
+    UNIONPAY = 8;
 }
 // 支付交易类型
 enum PayTradeType{
