@@ -151,6 +151,8 @@ enum TradeType{
     SCAN = 5;
     // 网关
     GATEWAY_ = 6;
+    //线下
+    OFFLINE_ = 7;
 }
 //付款类型
 enum PayType{
