@@ -114,6 +114,12 @@ enum PayChannel{
     GATEWAY = 4;
     //线下支付
     OFFLINE = 5;
+    //代金券
+    COUPON = 6;
+    //收银台
+    CASHIER = 7;
+    //云闪付
+    UNIONPAY = 8;
 }
 // 支付交易类型
 enum PayTradeType{
@@ -133,16 +139,20 @@ enum PayTradeType{
 //交易类型
 enum TradeType{
     UNKNOWN = 0;
+    // JSAPI
     JSAPI = 1;
-    APP = 2;
-    NATIVE = 3;
-    MWEB =4;
-    MA = 5;
-    ALIPAY_ = 6;
-    MICROPAY = 7;
-    GATEWAY_ = 8;
+    // 小程序
+    MA = 2;
+    // 微信之外的浏览器，访问手机网站时使用的支付手段
+    MWEB = 3;
+    // 原生APP
+    NATIVE = 4;
+    // 扫码
+    SCAN = 5;
+    // 网关
+    GATEWAY_ = 6;
     //线下
-    OFFLINE_TRADE = 9;
+    OFFLINE_ = 7;
 }
 //付款类型
 enum PayType{
