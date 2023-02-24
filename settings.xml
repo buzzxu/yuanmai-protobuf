@@ -8,5 +8,15 @@
             <username>admin</username>
             <password>${password}</password>
         </server>
+        <server>
+            <id>rdc-releases</id>
+            <username>5ec3a40e2430b0ce44e8ef73</username>
+            <password>${password_rdc}</password>
+        </server>
+        <server>
+            <id>rdc-snapshots</id>
+            <username>5ec3a40e2430b0ce44e8ef73</username>
+            <password>${password_rdc}</password>
+        </server>
     </servers>
 </settings>
