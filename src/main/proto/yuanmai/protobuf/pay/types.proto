@@ -120,6 +120,8 @@ enum PayChannel{
     CASHIER = 7;
     //云闪付
     UNIONPAY = 8;
+    //备付金
+    PROVISIONS = 9;
 }
 // 支付交易类型
 enum PayTradeType{
