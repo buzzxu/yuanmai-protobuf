@@ -122,6 +122,11 @@ enum PayChannel{
     UNIONPAY = 8;
     //备付金
     PROVISIONS = 9;
+    //积分支付
+    INTEGRAL = 10;
+    //混合
+    MIXED = 99;
+
 }
 // 支付交易类型
 enum PayTradeType{
