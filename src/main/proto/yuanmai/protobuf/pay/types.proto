@@ -98,6 +98,10 @@ enum RefundState {
     R_SUCCESS = 3;
     // 退款失败
     R_FAIL = 4;
+    //关闭
+    R_CLOSE = 5;
+    //驳回
+    R_REJECT = 6;
 }
 
 // 支付渠道
