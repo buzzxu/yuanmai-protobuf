@@ -37,12 +37,12 @@
 
     <distributionManagement>
         <repository>
-            <id>ym-nexus</id>
-            <url>https://nexus.xingchenga.xyz/repository/maven-releases/</url>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2003547-release-AmXxfp</url>
         </repository>
         <snapshotRepository>
-            <id>ym-nexus</id>
-            <url>https://nexus.xingchenga.xyz/repository/maven-snapshots/</url>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2003547-snapshot-xxdKnz</url>
         </snapshotRepository>
     </distributionManagement>
     <dependencies>
