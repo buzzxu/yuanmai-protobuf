@@ -17,7 +17,7 @@
             <id>fucksky-yuanmai-repo</id>
             <username>cnb</username>
             <!-- 请替换为您的访问令牌 -->
-            <password>aReF3w7ZsUf147eTaFJ05KHmSyI</password>
+            <password>${CNB_TOKEN}</password>
         </server>
     </servers>
     <profiles>
