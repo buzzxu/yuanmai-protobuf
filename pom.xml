@@ -36,14 +36,19 @@
     </dependencyManagement>
 
     <distributionManagement>
-        <repository>
+        <!--<repository>
             <id>rdc-releases</id>
             <url>https://packages.aliyun.com/maven/repository/2003547-release-AmXxfp</url>
         </repository>
         <snapshotRepository>
             <id>rdc-snapshots</id>
             <url>https://packages.aliyun.com/maven/repository/2003547-snapshot-xxdKnz</url>
-        </snapshotRepository>
+        </snapshotRepository>-->
+        <repository>
+            <id>fucksky-yuanmai-repo</id>
+            <name>fucksky-yuanmai-repo</name>
+            <url>https://maven.cnb.cool/fucksky/yuanmai-repo/-/packages/</url>
+        </repository>
     </distributionManagement>
     <dependencies>
         <dependency>
