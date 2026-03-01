@@ -2,3 +2,6 @@
 .idea
 target
 *.iml
+
+# protobuf 自动生成的代码
+src/main/java/
